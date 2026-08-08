@@ -15,7 +15,7 @@ An emergency detection layer short-circuits the pipeline immediately for potenti
 
 User Input
 
- Emergency Check ───────► If detected: return static emergency message immediately
+ Emergency Check : If detected: return static emergency message immediately
     
  RAG Retrieval (FAISS + sentence-transformers)
 
