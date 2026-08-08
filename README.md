@@ -27,20 +27,7 @@ User Input
    
 Final Response
 
-# Project Structure
-MedicalAssistant
-backend
-pipeline.py          # Orchestrates the full request flow
-retrieval.py         # Embedding + FAISS vector search
-prompt_builder.py    # Builds the structured prompt for Gemini
-gemini_client.py     # Handles all Gemini API communication
-safety_layer.py      # Emergency detection + safety disclaimers
-data/                     # MedQuAD dataset + chunked JSON
-vector_store/              # FAISS index + chunk metadata
-chunking.py                # Offline script: builds chunks.json from raw CSV
-app_streamlit.py            # Streamlit UI (entry point)
-requirements.txt
-.env                        # API keys (not committed)
+
 
 # Tech Stack
 Python, Google Gemini API, FAISS, sentence-transformers (all-MiniLM-L6-v2), LangChain (chunking), Streamlit, MedQuAD dataset
