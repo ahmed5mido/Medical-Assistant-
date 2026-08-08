@@ -1,4 +1,4 @@
-# Medical-Assistant-
+# Ai Medical Assistant
 An AI-powered medical assistant that provides safe, source-grounded health information using Retrieval-Augmented Generation (RAG), Google Gemini, and a dedicated multi-layer safety system. 
 
 ⚠️ Disclaimer: For educational purposes only. Not a substitute for professional medical advice, diagnosis, or treatment.
@@ -14,23 +14,17 @@ An emergency detection layer short-circuits the pipeline immediately for potenti
 # Architecture
 
 User Input
-    │
-    ▼
-[1] Emergency Check ───────► If detected: return static emergency message immediately
-    │
-    ▼
-[2] RAG Retrieval (FAISS + sentence-transformers)
-    │
-    ▼
-[3] Prompt Construction (rules + retrieved sources)
-    │
-    ▼
-[4] Gemini Generation + Self-Review (single API call)
-    │
-    ▼
-[5] Safety Disclaimer & Warning Injection
-    │
-    ▼
+
+ Emergency Check ───────► If detected: return static emergency message immediately
+    
+ RAG Retrieval (FAISS + sentence-transformers)
+
+ Prompt Construction (rules + retrieved sources)
+
+ Gemini Generation + Self-Review (single API call)
+   
+ Safety Disclaimer & Warning Injection
+   
 Final Response
 
 # Project Structure
