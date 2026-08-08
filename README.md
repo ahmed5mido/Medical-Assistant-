@@ -1,6 +1,8 @@
 # Medical-Assistant-
 An AI-powered medical assistant that provides safe, source-grounded health information using Retrieval-Augmented Generation (RAG), Google Gemini, and a dedicated multi-layer safety system. 
+
 ⚠️ Disclaimer: For educational purposes only. Not a substitute for professional medical advice, diagnosis, or treatment.
+
 # Overview
 Instead of letting an LLM answer medical questions purely from its own internal knowledge (risking hallucination and outdated information), this system:
 
@@ -10,6 +12,7 @@ Reviews and filters the response through a safety layer — preventing dosage re
 An emergency detection layer short-circuits the pipeline immediately for potentially life-threatening symptoms, bypassing the LLM entirely.
 
 # Architecture
+
 User Input
     │
     ▼
